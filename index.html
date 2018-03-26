@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Open+Sans:300:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); 
+    </script>
+    <script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <h1>Fretboard Games</h1>
+      <p>Practice here to help yourself learn all the stupid notes.</p>
+      <b id="challenge-text"></b>
+      <div class="fretboard-wrapper">
+        <div class="fretboard-border"></div>
+      </div>
+    </div>
+  </body>
+</html>
