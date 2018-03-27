@@ -26,8 +26,20 @@
       <p>Practice here to help yourself learn all the stupid notes.</p>
       <b id="challenge-text"></b>
       <div class="fretboard-wrapper">
-        <div class="fretboard-border"></div>
+        <div id="fretboard"></div>
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/fretboard_drawer.js"></script>
+    <script src="js/fretboard_handler.js"></script>   
+    <script>
+      $(window).on('load',function(){
+        FretboardHandler.init();
+      });
+    </script>
   </body>
 </html>
