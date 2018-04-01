@@ -4,7 +4,7 @@ var FretboardDrawer = {
   $fretboard: null,
   $fretboardCanvas: null,
   fretboardCtx: null,
-  stringData: null
+  stringData: null,
   init: function(fretboard, width, height) {
     this.$fretboard = fretboard;
     this.width = width;
@@ -26,6 +26,10 @@ var FretboardDrawer = {
   },
   drawStrings: function() {
     var yInterval = this.height / 5;
-    
+    this.fretboardCtx.fillStyle = 'rgb(0, 0, 0)';
+    for(i = 0; i < 6; i++) {
+      var lineY = (i * yInterval) - 1;
+      this.fretboardCtx.fillRect(0, lineY , this.width, 2);
+    }
   }
 }
